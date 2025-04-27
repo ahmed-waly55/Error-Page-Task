@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Merriweather Sans', sans-serif; /* Apply Merriweather Sans font */
+    background: #fff; /* Set background color */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Error Text and Link Styles */
+#errorText {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 14px 0;
+    color: #3498DB;
+
+}
+
+#errorLink {
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid;
+    color: #3498DB;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    /* background-color: transparent; */
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hover and active states for the error link */
+/* #errorLink:hover,
+#errorLink:active {
+    color: #000;
+    background: #f4f4f4;
+} */
+
+/* SVG animation (rotation) */
+#g6219 {
+    transform-origin: 85px 4px; /* Set pivot point for rotation */
+    animation: an1 12s .5s infinite ease-out; /* Apply animation */
+}
+
+@keyframes an1 {
+    0% { transform: rotate(0); }
+    5% { transform: rotate(3deg); }
+    15% { transform: rotate(-2.5deg); }
+    25% { transform: rotate(2deg); }
+    35% { transform: rotate(-1.5deg); }
+    45% { transform: rotate(1deg); }
+    55% { transform: rotate(-1.5deg); }
+    65% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+    85% { transform: rotate(2.5deg); }
+    95% { transform: rotate(-3deg); }
+    100% { transform: rotate(0); }
+}
+
+/* Media Queries for responsiveness */
+
+/* For large screens (1200px and above) */
+@media (min-width: 1200px) {
+    /* You can add specific styles for large screens here if needed */
+}
+
+/* For medium screens (max-width 1200px) */
+@media (max-width: 1200px) {
+    svg {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* For small screens (max-width 768px) */
+@media (max-width: 768px) {
+    svg {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* For extra small screens (max-width 480px) */
+@media (max-width: 480px) {
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
